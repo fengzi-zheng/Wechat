@@ -1,0 +1,16 @@
+<view class="news">
+  <view class="list" wx:for="{{news}}" wx:key="index">
+    <view class="info">
+      <view class="title">
+        <text>{{item.title}}</text>
+      </view>
+      <view class="bot">
+        <text class="sour">{{item.sour}}</text>
+        <text>{{item.time}}</text>
+      </view>
+    </view>
+    <view class="newsImg">
+      <image src="{{item.url}}"></image>
+    </view>
+  </view>
+</view>
